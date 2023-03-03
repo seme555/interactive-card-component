@@ -1,37 +1,78 @@
-/* style.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .card {
-  width: 300px;
-  margin: 20px;
+  width: 350px;
   padding: 20px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.card-title {
-  font-size: 2rem;
-  color: #333;
-}
-
-.card-description {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Updated typography */
-.card-title {
-  font-size: 1.8rem;
-  font-family: "Arial", sans-serif;
-  color: #333;
-}
-
-.card-description {
-  font-size: 1.1rem;
-  color: #777;
-}
-
-/* Hover effect */
 .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  padding: 0 10px;
+  font-weight: 300;
+}
+
+.card h2,
+.card p {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card {
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  border-radius: 15px;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card img.profile-img:hover {
+  border: 4px solid #ff7043;
   transform: scale(1.05);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
